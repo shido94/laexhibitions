@@ -1,0 +1,12 @@
+<div style="margin:10%">
+    <h1>asdf</h1>
+<div *ngIf="blogDetail">
+    
+    <div *ngFor="let blog of blogDetail.data">
+            <img [src]="blog.meta_image" width="200">
+        <div [innerHtml]="blog.blog_description"></div>
+    </div>
+<!-- 
+    <div [innerHTML]="description"></div> -->
+</div>
+</div>

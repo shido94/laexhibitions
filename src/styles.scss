@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Playfair+Display:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import 'baguettebox.js/dist/baguetteBox.min.css';
+
+$play:'Playfair Display', serif;
+$open:'Open Sans', sans-serif;
+
+*{
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    font-family: $open;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+}
+h2{
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+.about{
+    background: url(assets/images/body-bg.gif);
+}
+.btn-white {
+    text-decoration: none;
+    color: #AC0000;
+    border: 1px solid transparent;
+    background: #fff;
+    display: inline-block;
+    padding: 14px 20px;
+    line-height: 1;
+    border-radius: 4px;
+    min-width: 140px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.1);
+    transition: all 200ms linear;
+    &:hover{
+        background: #AC0000;
+        color: #fff;
+    }
+}
+
+
+.banner{   
+    // background: #AC0000 url(assets/images/banner.jpg) ;
+}
+.testi{
+    background: #AC0000 url(assets/images/bg.jpg);
+    position: relative;
+    z-index: 1;
+    margin-top: -4px;
+    padding: 100px 0;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 120px;
+        background: url(assets/images/page-curve.png) no-repeat ;
+        z-index: -1;
+        background-size: 100%;
+    }
+}
+footer{
+    background: #AC0000 url(assets/images/body-bg.gif);
+}
+.owl-nav {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    display: flex;
+    button {
+        display: flex;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        background: #ccc !important;
+        font-size: 30px !important;
+        height: 36px;
+        span{
+            line-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+        }
+        
+    }
+}
+
+@media (max-width:768px){
+
+}

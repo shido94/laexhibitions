@@ -1,0 +1,21 @@
+
+<div class="container" >
+    <div class="row" *ngIf="blogs" >
+        <div class="col-sm-4 bolg-wrap" *ngFor="let blog of blogs.data;">
+            <div class="">
+                <p class="authur"><small>{{blog.created_at}}</small> <small>Authur: {{blog.created_by}}</small></p>
+                <img [src]="blog.meta_image" alt="" class="">
+                <h4>{{blog.blog_title}}</h4>
+                <p>{{blog.sort_description}}</p>
+                <div class="tag">
+                    Personal Loan 
+                </div>
+                <a routerLink="/blog/blogdetails/{{blog.id}}" class="btn btn-success">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 blogPagination">
+        <!-- <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="collectionSize" (pageChange)="loadPage($event)">
+        </ngb-pagination> -->
+    </div>
+</div>
