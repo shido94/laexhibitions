@@ -203,6 +203,14 @@ img.imgborder {
     color: #fff;
 }
 
+.tz-gallery .lightbox img {
+    width: 99%;
+    height: 305px;
+    border-radius: 0;
+    border: 2px white solid;
+    position: relative;
+}
+
 #maindiv{
     overflow: hidden;
     white-space: nowrap;
